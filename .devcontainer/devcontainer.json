@@ -9,19 +9,19 @@
         "terminal.integrated.defaultProfile.linux": "zsh"
       },
       "extensions": [
-        // Liquid tags auto-complete
+        /* Liquid tags auto-complete */
         "killalau.vscode-liquid-snippets",
-        // Liquid syntax highlighting and formatting
+        /* Liquid syntax highlighting and formatting */
         "Shopify.theme-check-vscode",
-        // Shell
+        /* Shell */
         "timonwong.shellcheck",
         "mkhl.shfmt",
-        // Common formatter
+        /* Common formatter */
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "stylelint.vscode-stylelint",
         "yzhang.markdown-all-in-one",
-        // Git
+        /* Git */
         "mhutchie.git-graph"
       ]
     }

@@ -46,15 +46,15 @@ export function loadImg() {
     img.addEventListener('load', handleImage);
   });
 
-  // Images loaded from the browser cache do not trigger the 'load' event
+  /* Images loaded from the browser cache do not trigger the 'load' event */
   document.querySelectorAll('article img[loading="lazy"]').forEach((img) => {
     if (img.complete) {
       removeCover.call(img, cover.SHIMMER);
     }
   });
 
-  // LQIPs set by the data URI or WebP will not trigger the 'load' event,
-  // so manually convert the URI to the URL of a high-resolution image.
+  /* LQIPs set by the data URI or WebP will not trigger the 'load' event,
+     so manually convert the URI to the URL of a high-resolution image. */
   const lqips = document.querySelectorAll(
     `article img[${ATTR_DATA_LQIP}="true"]`
   );

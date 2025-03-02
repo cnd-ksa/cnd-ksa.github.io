@@ -15,7 +15,7 @@ const ICON_SUCCESS = 'fas fa-check';
 const ATTR_TIMEOUT = 'timeout';
 const ATTR_TITLE_SUCCEED = 'data-title-succeed';
 const ATTR_TITLE_ORIGIN = 'data-bs-original-title';
-const TIMEOUT = 2000; // in milliseconds
+const TIMEOUT = 2000; /* in milliseconds */
 
 function isLocked(node) {
   if (node.hasAttribute(ATTR_TIMEOUT)) {
@@ -64,7 +64,7 @@ function setCodeClipboard() {
     return;
   }
 
-  // Initial the clipboard.js object
+  /* Initial the clipboard.js object */
   const clipboard = new ClipboardJS(clipboardSelector, {
     target: (trigger) => {
       const codeBlock = trigger.parentNode.nextElementSibling;
@@ -114,12 +114,12 @@ function setLinkClipboard() {
       return;
     }
 
-    // Copy URL to clipboard
+    /* Copy URL to clipboard */
     navigator.clipboard.writeText(window.location.href).then(() => {
       const defaultTitle = target.getAttribute(ATTR_TITLE_ORIGIN);
       const succeedTitle = target.getAttribute(ATTR_TITLE_SUCCEED);
 
-      // Switch tooltip title
+      /* Switch tooltip title */
       target.setAttribute(ATTR_TITLE_ORIGIN, succeedTitle);
       Tooltip.getInstance(target).show();
 

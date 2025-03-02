@@ -13,7 +13,7 @@ const results = document.getElementById('search-results');
 const input = document.getElementById('search-input');
 const hints = document.getElementById('search-hints');
 
-// CSS class names
+/* CSS class names */
 const LOADED = 'd-block';
 const UNLOADED = 'd-none';
 const FOCUS = 'input-focus';

@@ -20,7 +20,7 @@ function init() {
     return;
   }
 
-  // Avoid create multiple instances of Tocbot. Ref: <https://github.com/tscanlin/tocbot/issues/203>
+  /* Avoid create multiple instances of Tocbot. Ref: <https://github.com/tscanlin/tocbot/issues/203> */
   if (desktopMode.matches) {
     desktop.init();
   } else {

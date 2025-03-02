@@ -13,7 +13,7 @@ const CLOSING = 'closing';
 
 export class TocMobile {
   static #invisible = true;
-  static #barHeight = 16 * 3; // 3rem
+  static #barHeight = 16 * 3; /* 3rem */
 
   static options = {
     tocSelector: '#toc-popup-content',

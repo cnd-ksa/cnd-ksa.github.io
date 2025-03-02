@@ -13,7 +13,7 @@ export function categoryCollapse() {
     const id = parentPrefix + elem.id.substring(childPrefix.length);
     const parent = document.getElementById(id);
 
-    // collapse sub-categories
+    /* collapse sub-categories */
     elem.addEventListener('hide.bs.collapse', () => {
       if (parent) {
         parent.querySelector('.far.fa-folder-open').className =
@@ -23,7 +23,7 @@ export function categoryCollapse() {
       }
     });
 
-    // expand sub-categories
+    /* expand sub-categories */
     elem.addEventListener('show.bs.collapse', () => {
       if (parent) {
         parent.querySelector('.far.fa-folder').className =
