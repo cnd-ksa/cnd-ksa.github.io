@@ -21,11 +21,11 @@ $$
 
 을 만족합니다.
 
-이때, $\operatorname{span}\{ x_n \}$의 closure가 $H$ 전체가 될 때 이를 Riesz basis라고 합니다.
+이때, $\mathrm{span}\{ x_n \}$의 closure가 $\mathcal H$ 전체가 될 때 이를 Riesz basis라고 합니다.
 
 ### Relationship with Orthonormal Bases
 
-이는 Fundamental theorem of Hilbert spaces에 의해, $\{ x_n \}$은 $\ell^2$에서 $H$로 가는 어떤 bounded, invertible linear operator의 image가 됩니다. 즉, 어떤 orthonormal basis $e_n$에 대해 $x_n = T(e_n)$ 꼴로 작성할 수 있습니다.
+이는 Fundamental theorem of Hilbert spaces에 의해, $\{ x_n \}$은 $\ell^2$에서 $\mathcal H$로 가는 어떤 bounded, invertible linear operator의 image가 됩니다. 즉, 어떤 orthonormal basis $e_n$에 대해 $x_n = T(e_n)$ 꼴로 작성할 수 있습니다.
 
 반대로 Hilbert space에서 orthonormal한 basis는 Parseval's identity,
 
@@ -41,7 +41,7 @@ $$
 $$
 
 $$
-\left\|\sum a_n x_n\right\| >= \|T^{-1}\|^{-1} \cdot \left\|\sum a_n e_n\right\|
+\left\|\sum a_n x_n\right\| \geq \|T^{-1}\|^{-1} \cdot \left\|\sum a_n e_n\right\|
 $$
 
 을 만족하므로 Riesz basis가 됨을 알 수 있습니다.
