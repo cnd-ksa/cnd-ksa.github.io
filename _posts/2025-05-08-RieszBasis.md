@@ -1,9 +1,9 @@
 ---
 title: Riesz Basis
 date: 2025-05-08 08:50:00 +0900
-categories: [Analysis, Functional Analysis, Fourier Analysis]
-tags: [Riesz basis, Hilbert Space]
-author: 22-118 채문균
+categories: [Analysis, Functional Analysis]
+tags: [Analysis, Functional Analysis, Fourier Analysis, Riesz basis, Hilbert Space]
+author: 22-118 Moongyun Chae
 math: true
 ---
 ## Riesz Basis
@@ -50,10 +50,10 @@ $$
 
 ### Example: Kadec's 1/4 Theorem
 
-이에 대한 대표적인 예시로는 $\exp(2πix λ_n)$ 꼴의 집합을 생각할 수 있습니다.
-Fourier series에서 $\{\exp(2πinx)\}$은 $\mathcal L^2(0,1)$의 orthonormal한 basis가 됨이 잘 알려져있지만, $λ_n = n+δ_n$ 꼴로 약간만 비틀었을 때도 $L^2(0,1)$의 basis가 될 수 있는가?와 같은 의문점이 남게 됩니다.
-이에 대해서는 Kadec's 1/4 Theorem에 의해 $|λ_n - n| < 1/4$이면, $\mathcal L^2(0,1)$의 Riesz basis가 된다고 잘 알려져있습니다.
+이에 대한 대표적인 예시로는 $\exp(2\pi ix \lambda_n)$ 꼴의 집합을 생각할 수 있습니다.
+Fourier series에서 $\{\exp(2\pi inx)\}$은 $\mathcal L^2(0,1)$의 orthonormal한 basis가 됨이 잘 알려져있지만, $\lambda_n = n+\delta_n$ 꼴로 약간만 비틀었을 때도 $\mathcal L^2(0,1)$의 basis가 될 수 있는가?와 같은 의문점이 남게 됩니다.
+이에 대해서는 Kadec's 1/4 Theorem에 의해 $|\lambda_n - n| < \frac14$이면, $\mathcal L^2(0,1)$의 Riesz basis가 된다고 잘 알려져있습니다.
 
 ### Applications and Current Research
 
-또한, 앞서 언급한 바와 같이 Riesz basis는 completeness와 stability를 만족하기에 수치해석적으로도 많이 활용되며, 특히 PDE의 해 공간의 basis로 eigenfunction이 Reisz basis가 되면 해를 stable하고 unique하게 표현 가능하다는 등의 장점이 있습니다. 그럼에도 불구하고 아직 Reisz basis에 관해서는 밝혀지지 않은 부분이 여럿있어 현재까지도 연구가 진행되고 있습니다.
+또한, 앞서 언급한 바와 같이 Riesz basis는 completeness와 stability를 만족하기에 수치해석적으로도 많이 활용되며, 특히 PDE의 해 공간의 basis로 eigenfunction이 Riesz basis가 되면 해를 stable하고 unique하게 표현 가능하다는 등의 장점이 있습니다. 그럼에도 불구하고 아직 Reisz basis에 관해서는 밝혀지지 않은 부분이 여럿 있어 현재까지도 연구가 진행되고 있습니다.
