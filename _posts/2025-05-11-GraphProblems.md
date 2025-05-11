@@ -59,12 +59,12 @@ $s-t$ min cut problem은 다음의 Max Flow Min Cut Theorem을 이용하여 max 
 $$\max_{f:\,s-t \text{ flow}} \left\vert f\right\vert = \min_{C:\,s-t\text{ cut}} \left\vert C\right\vert$$
 
 증명을 위해 먼저 다음을 보인다:
-- (Weak duality) $\max \left\vert f\right\vert \le \min \left\vert C\right\vert$. 
+- (Weak duality) $\max \left\lvert f\right\rvert \leq \min \left\lvert C\right\rvert$. 
 
 이는 유량의 보존 속성을 이용하면 쉽게 증명된다. 
 
 이제 다음 세 조건이 동치임을 보이면 충분하다:
-1. $\left\vert f\right\vert =\left\vert C\right\vert$ for some $s-t$ cut $C$
+1. $\left\lvert f\right\rvert =\left\lvert C\right\rvert$ for some $s-t$ cut $C$
 2. $f$ is a max $s-t$ flow
 3. $f$ has no augmenting path
 
@@ -89,7 +89,7 @@ $V'$에서의 maximum flow를 Ford-Fulkerson Algorithm으로 구해주면 원래
 
 Bipartite matching에 대해서는 다음의 2가지 중요한 정리가 성립한다:
 - (Kőnig's Theorem) Bipartite graph에서 $\max \left\vert M\right\vert = \min \left\vert V_C\right\vert$
-- (Hall's Theorem) Bipartite graph (L,R)에서 perfect matching이 존재할 필요충분조건은 모든 $S\subseteq L$에 대해 $\left\vert S\right\vert\le \left\vert N(S)\right\vert$가 성립하는 것이다($N(S)$는 $S$와 인접한 vertex들의 집합).
+- (Hall's Theorem) Bipartite graph $(L,R)$에서 perfect matching이 존재할 필요충분조건은 모든 $S\subseteq L$에 대해 $\left\lvert S\right\rvert\leq \left\lvert N(S)\right\rvert$가 성립하는 것이다($N(S)$는 $S$와 인접한 vertex들의 집합).
 
 Kőnig's Theorem을 이용하면 (일반적인 그래프에서와 달리) bipartite graph에서의 vertex cover와 independent set을 bipartite matching 문제로 환원하여 다항시간에 찾을 수 있다.
 
