@@ -13,7 +13,7 @@ math: true
 ## 1. Definition
 유한집합 $S$와 $I\subseteq \mathcal{P} (S)$가 다음 성질을 만족한다고 하자.
 1. $\phi\in I$
-2. (Heridity) If $X\in I$ and $Y\subset X$ then $Y\in I$
+2. (Heridity) If $X\in I$ and $Y\subseteq X$ then $Y\in I$
 3. (Exchange) If $X\in I$ and $\left\vert Y\right\vert < \left\vert X\right\vert$ then $Y+a\in I$ for some $a\in S$ 
 
 이때 $M=(S,I)$ 를 $S$ 위의 matroid라 하고, $I$의 원소를 independent set이라 한다.
@@ -23,7 +23,7 @@ math: true
 2. Uniform Matroid: $S$와 음이 아닌 정수 $k$가 주어졌을 때 $I=\{X\subseteq S:\left\vert X\right\vert\le k\}$로 둔다.
 3. Partition Matroid: $S$와 color function $f: S\rightarrow C$, 음이 아닌 정수들 $k_i$가 주어졌을 때 $I = \{X\subseteq S: \left\vert X\cap f^{-1}(c_i)\right\vert\le k_i\}$ 로 둔다.
 4. Linear Matroid: $S$를 vector space, $I$를 linearly independent set들의 집합으로 둔다.
-5. Graphic Matroid: Undirected graph $G=(V,E)$에 대해 $S=E$, $I=\{E'\subseteq E:E'\text{ contaings no cycle }\}$ 으로 둔다.
+5. Graphic Matroid: Undirected graph $G=(V,E)$에 대해 $S=E$, $I=\{E'\subseteq E:E'\text{ contains no cycle }\}$ 으로 둔다.
 6. Co-graphic Matroid: $S$는 위와 동일, $I=\{E'\subseteq E:E\setminus E' \text{ is connected }\}$ 으로 둔다.
 7. Transversal Matroid: Bipartite graph $G=(L,R,E)$에 대해 $S=L$, $I=\{L'\subseteq L:L'\text{ can be matched to some }R'\subseteq R\}$ 으로 둔다.
 8. Algebraic Matroid: Field extension $L/K$가 주어졌을 때 $S$를 $L$의 finite subset, $I$를 algebraically independent set들의 집합으로 둔다.
