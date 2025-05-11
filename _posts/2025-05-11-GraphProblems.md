@@ -3,7 +3,7 @@ title: Graph Problems
 date: 2025-05-11 23:00:00 +0900
 categories: [Discrete Mathematics, Graph Theory]
 tags: [Graph Theory, Max Flow Min Cut Theorem, Bipartite Matching, Linear Programming]
-author: 23-027 Junghwan Kim
+author: ksa23027
 math: true
 ---
 
