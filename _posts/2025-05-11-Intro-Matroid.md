@@ -3,7 +3,7 @@ title: Introduction to Matroid
 date: 2025-05-11 17:20:00 +0900
 categories: [Discrete Mathematics, Matroid Theory]
 tags: [Matroid, Algorithm, Graph Theory, Linear Algebra, Matroid Intersection, Minimal Spanning Tree, Bipartite Matching]
-author: 23-027 Junghwan Kim
+author: 23027
 math: true
 ---
 
