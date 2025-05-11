@@ -3,7 +3,7 @@ title: Riesz Basis
 date: 2025-05-08 08:50:00 +0900
 categories: [Analysis, Functional Analysis]
 tags: [Analysis, Functional Analysis, Fourier Analysis, Riesz basis, Hilbert Space]
-author: 22-118 Moongyun Chae
+author: 22-118
 math: true
 ---
 ## Riesz Basis
