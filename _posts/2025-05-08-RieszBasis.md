@@ -12,8 +12,8 @@ Riesz basis란, 신호처리나 물리학 등에서 실제 구현 가능한 일�
 
 ### Definition of a Riesz Sequence
 
-힐베르트 공간 상에서 Riesz sequence란, 다음을 만족하는 vector sequence $\{ x_n \}$을 말합니다.
-어떠한 양의 실수들 $c \leq C$가 존재하여, 임의의 $\ell^2$ space 상의 복소수 수열 $\{ a_n \}$에 대해
+힐베르트 공간 상에서 Riesz sequence란, 다음을 만족하는 vector sequence $\\{ x_n \\}$을 말합니다.
+어떠한 양의 실수들 $c \leq C$가 존재하여, 임의의 $\ell^2$ space 상의 복소수 수열 $\\{ a_n \\}$에 대해
 
 $$
 c \left(\sum |a_n|^2\right) \leq \left\| \sum a_n x_n \right\|^2 \leq C \left(\sum |a_n|^2\right)
@@ -21,11 +21,11 @@ $$
 
 을 만족합니다.
 
-이때, $\mathrm{span}\{ x_n \}$의 closure가 $\mathcal H$ 전체가 될 때 이를 Riesz basis라고 합니다.
+이때, $\mathrm{span}\\{ x_n \\}$의 closure가 $\mathcal H$ 전체가 될 때 이를 Riesz basis라고 합니다.
 
 ### Relationship with Orthonormal Bases
 
-이는 Fundamental theorem of Hilbert spaces에 의해, $\{ x_n \}$은 $\ell^2$에서 $\mathcal H$로 가는 어떤 bounded, invertible linear operator의 image가 됩니다. 즉, 어떤 orthonormal basis $e_n$에 대해 $x_n = T(e_n)$ 꼴로 작성할 수 있습니다.
+이는 Fundamental theorem of Hilbert spaces에 의해, $\\{ x_n \\}$은 $\ell^2$에서 $\mathcal H$로 가는 어떤 bounded, invertible linear operator의 image가 됩니다. 즉, 어떤 orthonormal basis $e_n$에 대해 $x_n = T(e_n)$ 꼴로 작성할 수 있습니다.
 
 반대로 Hilbert space에서 orthonormal한 basis는 Parseval's identity,
 
@@ -51,7 +51,7 @@ $$
 ### Example: Kadec's 1/4 Theorem
 
 이에 대한 대표적인 예시로는 $\exp(2\pi ix \lambda_n)$ 꼴의 집합을 생각할 수 있습니다.
-Fourier series에서 $\{\exp(2\pi inx)\}$은 $\mathcal L^2(0,1)$의 orthonormal한 basis가 됨이 잘 알려져있지만, $\lambda_n = n+\delta_n$ 꼴로 약간만 비틀었을 때도 $\mathcal L^2(0,1)$의 basis가 될 수 있는가?와 같은 의문점이 남게 됩니다.
+Fourier series에서 $\\{\exp(2\pi inx)\\}$은 $\mathcal L^2(0,1)$의 orthonormal한 basis가 됨이 잘 알려져있지만, $\lambda_n = n+\delta_n$ 꼴로 약간만 비틀었을 때도 $\mathcal L^2(0,1)$의 basis가 될 수 있는가?와 같은 의문점이 남게 됩니다.
 이에 대해서는 Kadec's 1/4 Theorem에 의해 $|\lambda_n - n| < \frac14$이면, $\mathcal L^2(0,1)$의 Riesz basis가 된다고 잘 알려져있습니다.
 
 ### Applications and Current Research
