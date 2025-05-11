@@ -78,6 +78,6 @@ Maximal weight independent set problem에서와 마찬가지로 초기에 $X=\ph
 2. Bipartite Matching: 두 partition matroid (edge의 color를 각각 왼쪽 끝점, 오른쪽 끝점으로 둔다)의 intersection으로 해결할 수 있다.
 
 ## 7. References
-1. https://en.wikipedia.org/wiki/Matroid/ 
-2. https://infossm.github.io/blog/2019/05/15/introduction-to-matroid/
-3. https://infossm.github.io/blog/2019/06/17/Matroid-Intersection/
+1. <https://en.wikipedia.org/wiki/Matroid/> 
+2. <https://infossm.github.io/blog/2019/05/15/introduction-to-matroid/>
+3. <https://infossm.github.io/blog/2019/06/17/Matroid-Intersection/>
