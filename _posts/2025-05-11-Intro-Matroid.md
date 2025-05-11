@@ -20,12 +20,12 @@ math: true
 
 ## 2. Examples
 1. Free Matroid: 주어진 $S$에 대해 $I=\mathcal{P}(S)$로 둔다.
-2. Uniform Matroid: $S$와 음이 아닌 정수 $k$가 주어졌을 때 $I=\{X\subseteq S:\left\vert X\right\vert\le k\}$로 둔다.
-3. Partition Matroid: $S$와 color function $f: S\rightarrow C$, 음이 아닌 정수들 $k_i$가 주어졌을 때 $I = \{X\subseteq S: \left\vert X\cap f^{-1}(c_i)\right\vert\le k_i\}$ 로 둔다.
+2. Uniform Matroid: $S$와 음이 아닌 정수 $k$가 주어졌을 때 $I=\\{X\subseteq S:\left\vert X\right\vert\le k\\}$로 둔다.
+3. Partition Matroid: $S$와 color function $f: S\rightarrow C$, 음이 아닌 정수들 $k_i$가 주어졌을 때 $I = \\{X\subseteq S: \left\vert X\cap f^{-1}(c_i)\right\vert\le k_i\\}$ 로 둔다.
 4. Linear Matroid: $S$를 vector space, $I$를 linearly independent set들의 집합으로 둔다.
-5. Graphic Matroid: Undirected graph $G=(V,E)$에 대해 $S=E$, $I=\{E'\subseteq E:E'\text{ contains no cycle }\}$ 으로 둔다.
-6. Co-graphic Matroid: $S$는 위와 동일, $I=\{E'\subseteq E:E\setminus E' \text{ is connected }\}$ 으로 둔다.
-7. Transversal Matroid: Bipartite graph $G=(L,R,E)$에 대해 $S=L$, $I=\{L'\subseteq L:L'\text{ can be matched to some }R'\subseteq R\}$ 으로 둔다.
+5. Graphic Matroid: Undirected graph $G=(V,E)$에 대해 $S=E$, $I=\\{E'\subseteq E:E'\text{ contains no cycle }\\}$ 으로 둔다.
+6. Co-graphic Matroid: $S$는 위와 동일, $I=\\{E'\subseteq E:E\setminus E' \text{ is connected }\\}$ 으로 둔다.
+7. Transversal Matroid: Bipartite graph $G=(L,R,E)$에 대해 $S=L$, $I=\\{L'\subseteq L:L'\text{ can be matched to some }R'\subseteq R\\}$ 으로 둔다.
 8. Algebraic Matroid: Field extension $L/K$가 주어졌을 때 $S$를 $L$의 finite subset, $I$를 algebraically independent set들의 집합으로 둔다.
 
 Independent set을 정의할 때 쓰는 성질들을 matroid-like property라 하자. 예시에서 알 수 있듯이 matroid-like property는 '원소들끼리 서로 독립적인' 성질 혹은 '원소가 적을수록 만족하기 쉬운' 성질 정도로 이해하면 된다.
@@ -41,7 +41,7 @@ Matroid $M$의 maximal independent set을 basis라 하고, minimal dependent set
 - $M_1, M_2$의 union $M_1\lor M_2$ 을 $(S_1\cup S_2, I_1\cup I_2)$ 으로 정의한다.
 
 Matroid $M=(S,I)$에 대해 
-- $R\subseteq S$일 때 $M$의 $R$로의 restriction $M_R$을 $(R, \{X\cap R\}_{X\in I})$로 정의한다.
+- $R\subseteq S$일 때 $M$의 $R$로의 restriction $M_R$을 $(R, \\{X\cap R\\}_{X\in I})$로 정의한다.
 - $M$의 dual $M^{* }=(S,I^{* })$을 다음과 같이 정의한다: $X\in I^{* }$ iff $S-X$ contains some basis of $M$. 이때 $(M^{* })^{* }=M$이 성립한다. 
 
 Co-graphic matroid는 graphic matroid의 dual이다. 
@@ -69,7 +69,7 @@ Maximal weight independent set problem에서와 마찬가지로 초기에 $X=\ph
 먼저 다음을 정의한다.
 1.  $S$ 위의 방향 그래프 $D_{M_i}(X): x\rightarrow y$ iff $y\in S-X$ and $X-x+y\in I_i$ 
 2. $D_{M_1,M_2}(X) = D_{M_1}(X)\cup reversed(D_{M_2}(X))$
-3. $X_i=\{y \in S-X: X+y\in I_i\}$
+3. $X_i=\\{y \in S-X: X+y\in I_i\\}$
 
 즉 $D_{M_1,M_2}(X)$는 $X$의 원소를 exchange하는 과정을 그래프로 표현한 것이라 보면 된다. 이제 $D_{M_1,M_2}(X)$의 $X_1$에서 $X_2$로의 shortest path $P$를 찾는다. $X:= (X-P)\cup(P-X)$로 두면 $X$의 independentness가 유지되면서 크기가 1만큼 커진다. 이러한 $P$가 존재하지 않을 때까지 이를 반복한다. 그러면 $X$가 문제의 답이 되고 알고리즘을 중단한다.
 
