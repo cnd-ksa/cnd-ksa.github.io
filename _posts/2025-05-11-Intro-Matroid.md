@@ -2,7 +2,7 @@
 title: Introduction to Matroid
 date: 2025-05-11 17:20:00 +0900
 categories: [Discrete Mathematics, Matroid Theory]
-tags: [Matroid, Algorithm, Graph Theory, Linear Algebra]
+tags: [Matroid, Algorithm, Graph Theory, Linear Algebra, Matroid Intersection, Minimal Spanning Tree, Bipartite Matching]
 author: 23-027 Junghwan Kim
 math: true
 ---
@@ -73,7 +73,7 @@ Maximal weight independent set problem에서와 마찬가지로 초기에 $X=\ph
 
 즉 $D_{M_1,M_2}(X)$는 $X$의 원소를 exchange하는 과정을 그래프로 표현한 것이라 보면 된다. 이제 $D_{M_1,M_2}(X)$의 $X_1$에서 $X_2$로의 shortest path $P$를 찾는다. $X:= (X-P)\cup(P-X)$로 두면 $X$의 independentness가 유지되면서 크기가 1만큼 커진다. 이러한 $P$가 존재하지 않을 때까지 이를 반복한다. 그러면 $X$가 문제의 답이 되고 알고리즘을 중단한다.
 
-### 6-2. Applications
+### 6-2. Examples
 1. Arborescence(Directed MST): graphic matroid와 partition matroid (edge의 color를 끝점으로 둔다) 와의 intersection으로 해결할 수 있다.
 2. Bipartite Matching: 두 partition matroid (edge의 color를 각각 왼쪽 끝점, 오른쪽 끝점으로 둔다)의 intersection으로 해결할 수 있다.
 
