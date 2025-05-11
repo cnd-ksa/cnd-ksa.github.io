@@ -41,7 +41,7 @@ Matroid $M$의 maximal independent set을 basis라 하고, minimal dependent set
 - $M_1, M_2$의 union $M_1\lor M_2$ 을 $(S_1\cup S_2, I_1\cup I_2)$ 으로 정의한다.
 
 Matroid $M=(S,I)$에 대해 
-- $R\subseteq S$일 때 $M$의 $R$로의 restriction $M\middle R$을 $(R, \{X\cap R\}_{X\in I})$로 정의한다.
+- $R\subseteq S$일 때 $M$의 $R$로의 restriction $M_R$을 $(R, \{X\cap R\}_{X\in I})$로 정의한다.
 - $M$의 dual $M^{* }=(S,I^{* })$을 다음과 같이 정의한다: $X\in I^{* }$ iff $S-X$ contains some basis of $M$. 이때 $(M^{* })^{* }=M$이 성립한다. 
 
 Co-graphic matroid는 graphic matroid의 dual이다. 
