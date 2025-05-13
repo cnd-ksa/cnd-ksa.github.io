@@ -29,7 +29,7 @@ $\dim V=n<\infty$일 때는 $V^* $의 원소를 $1\times n$ 행렬로 표현할 
 ## 3. Identifications of $V$ and $V^* $
 $V$가 유한차원일 때 $V$와 $V^* $이 isomorphic하다는 것을 직관적으로 이해하는 방법들로는 다음과 같은 것들이 있다:
 1. 좌표와 좌표함수들의 identification: "벡터의 $i$번째 성분"과 "벡터를 받아 i번째 성분을 내놓는 함수"는 거의 같은 것으로 취급할 수 있다. 이것이 dual basis의 구성에 직접적으로 활용되었다.
-2. $1\times n$ 행렬과 $n\times 1$ 행렬의 identification: Dual vector는 $1\times n$ 행렬로 나타낼 수 있고 이는 $90^\degree$ 돌려서 $V$의 원소인 $n\times 1$ 행렬과 같게 볼 수 있다. Dual basis 개념도 이것과 호환된다: Dual basis는 행렬로 나타내면 $[0,\cdots,0,1,0,\cdots,0]$이 된다. 앞에서 $\dim V^*  =n$를 증명할 때 이를 사용하였다.
+2. $1\times n$ 행렬과 $n\times 1$ 행렬의 identification: Dual vector는 $1\times n$ 행렬로 나타낼 수 있고 이는 $90^\circ$ 돌려서 $V$의 원소인 $n\times 1$ 행렬과 같게 볼 수 있다. Dual basis 개념도 이것과 호환된다: Dual basis는 행렬로 나타내면 $[0,\cdots,0,1,0,\cdots,0]$이 된다. 앞에서 $\dim V^*  =n$를 증명할 때 이를 사용하였다.
 
 $V$에 내적까지 주어졌을 때는 다음과 같은 이해도 가능하다:
 3. 고정된 벡터와의 내적과 선형범함수의 identification: 내적공간에서는 고정된 벡터 $v$에 대해 $w\mapsto (v,w)$가 선형범함수가 된다. 반대로 Riesz Representation Theorem에 의하면 모든 선형범함수를 이와 같이 내적으로 표현할 수 있다. 따라서 $V^* $의 원소인 선형범함수 하나가 $V$의 원소인 $v$와 일대일로 대응되게 된다. 
