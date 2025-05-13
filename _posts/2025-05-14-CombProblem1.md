@@ -11,7 +11,7 @@ math: true
 ## 문제
 
 
-Let $\\{ M_i \mid 1 \le i \le 11, i \in \N \\}$ be a collection of sets, where $\lvert M_i\rvert = 5$ and $M_i \cap M_j \ne \varnothing$ for all $1 \le i < j \le 11$. Let $m$ be the largest number for which there exist $M_{i_1}, ..., M_{i_m}$ among the chosen sets with $\bigcap_{k=1}^m M_{i_k} \ne \varnothing$. Find the minimal value of $m$ over all initial choices of $M_i$.
+Let $\\{ M_i \mid 1 \le i \le 11, i \in \mathbb N \\}$ be a collection of sets, where $\lvert M_i\rvert = 5$ and $M_i \cap M_j \ne \varnothing$ for all $1 \le i < j \le 11$. Let $m$ be the largest number for which there exist $M_{i_1}, ..., M_{i_m}$ among the chosen sets with $\bigcap_{k=1}^m M_{i_k} \ne \varnothing$. Find the minimal value of $m$ over all initial choices of $M_i$.
 
 ## 풀이
 
