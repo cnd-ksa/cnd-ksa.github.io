@@ -1,15 +1,12 @@
 ---
 title: Fourier Restriction Problem
 date: 2025-05-14 12:00:00 +0900
-categories: [Analysis, Fourier analysis, Functional Analysis]
-tags: [Hilbert space, Restriction Problem]
+categories: [Analysis, Fourier analysis]
+tags: [Hilbert space, Restriction Problem, Analysis, Fourier analysis, Functional Analysis]
 author: ksa22118
 math: true
 ---
 
-# Fourier Restriction Problem
-
----
 
 ## Definition of Fourier Transform
 
@@ -71,6 +68,7 @@ $$
 $$
 S = S^{n-1} \subset \mathbb{R}^n \text{일 때,} \quad p \leq \frac{2(n+1)}{n+3}
 $$
+
 이면 restriction inequality가 성립합니다.
 
 이 정리는 restriction theory의 출발점이 되었고, 이후 다양한 확장들이 이루어졌습니다.
