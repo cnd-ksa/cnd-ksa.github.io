@@ -1,7 +1,7 @@
 ---
 title: Fourier Restriction Problem
 date: 2025-05-14 12:00:00 +0900
-categories: [Analysis, Fourier analysis]
+categories: [Analysis, Fourier Analysis]
 tags: [Hilbert space, Restriction Problem, Analysis, Fourier analysis, Functional Analysis]
 author: ksa22118
 math: true
@@ -13,7 +13,7 @@ math: true
 함수 $f \in L^1(\mathbb{R}^n)$에 대한 푸리에 변환은 다음과 같이 정의됩니다:
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) \, e^{-2\pi i x \cdot \xi} \, dx
+\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) \; e^{-2\pi i x \cdot \xi} \; dx
 $$
 
 푸리에 변환은 $L^1(\mathbb{R}^n)$에서 $C_0(\mathbb{R}^n)$으로의 변환이기에, $\hat{f}$는 $\mathbb{R}^n$ 전체에서 정의되어 있습니다.
@@ -36,9 +36,9 @@ $$
 $f \in L^2(\mathbb{R})$이고, mean이 0일 때:
 
 $$
-\left( \int_{\mathbb{R}} x^2 |f(x)|^2 \, dx \right)
-\left( \int_{\mathbb{R}} \xi^2 |\hat{f}(\xi)|^2 \, d\xi \right)
-\geq \frac{1}{16\pi^2} \left( \int_{\mathbb{R}} |f(x)|^2 \, dx \right)^2
+\left( \int_{\mathbb{R}} x^2 |f(x)|^2 \; dx \right)
+\left( \int_{\mathbb{R}} \xi^2 |\hat{f}(\xi)|^2 \; d\xi \right)
+\geq \frac{1}{16\pi^2} \left( \int_{\mathbb{R}} |f(x)|^2 \; dx \right)^2
 $$
 
 즉, 함수 $f$가 특정한 위치에 집중될수록, $\hat{f}$는 넓은 주파수 대역에 퍼지게 되며, 두 함수를 동시에 localized 할 수 없습니다.
@@ -56,7 +56,7 @@ $S$가 smooth한 $(n-1)$차원 곡면이고, $d\sigma$가 $S$ 위의 surface mea
 다음과 같은 부등식이 성립하도록 만드는 $p, q$의 조건을 찾는 것입니다:
 
 $$
-\Vert\hat{f}\mid_S\Vert_{L^q(S, d\sigma)} \leq C \Vert f\Vert_{L^p(\mathbb{R}^n)} \quad \text{(단, $1 \leq p \leq 2$, $q \geq 1$)}
+\Vert\hat{f}\vert_S\Vert_{L^q(S, d\sigma)} \leq C \Vert f\Vert_{L^p(\mathbb{R}^n)} \quad \text{(단, $1 \leq p \leq 2$, $q \geq 1$)}
 $$
 
 ---
@@ -92,7 +92,7 @@ $p < \frac{2n}{n+1}$이면 restriction inequality가 성립하고,
 **Bilinear Restriction Theorem**은 $\hat{f}$, $\hat{g}$가 주파수 영역에서 분리되어 있을 때,
 
 $$
-\Vert \hat{f}\mid_S\cdot \hat{g}\mid_S\Vert_{L^r(S)} \leq C \Vert f \Vert_{L^p} \Vert g \Vert_{L^p}
+\Vert \hat{f}\vert_S\cdot \hat{g}\vert_S\Vert_{L^r(S)} \leq C \Vert f \Vert_{L^p} \Vert g \Vert_{L^p}
 $$
 
 같은 형태의 부등식이 성립함을 보여줍니다.
