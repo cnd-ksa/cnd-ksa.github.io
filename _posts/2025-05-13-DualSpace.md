@@ -2,7 +2,7 @@
 title: Dual Space
 date: 2025-05-13 23:00:00 +0900
 categories: [Algebra, Linear Algebra]
-tags: [Linear Algebra, Functional Analysis, Dual Space, Hilbert Space, Banach Space]
+tags: [Linear Algebra, Analysis, Functional Analysis, Dual Space, Hilbert Space, Banach Space]
 author: ksa23027
 math: true
 ---
