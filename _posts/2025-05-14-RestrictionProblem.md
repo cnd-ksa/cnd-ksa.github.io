@@ -2,7 +2,7 @@
 title: Fourier Restriction Problem
 date: 2025-05-14 12:00:00 +0900
 categories: [Analysis, Fourier Analysis]
-tags: [Hilbert space, Restriction Problem, Analysis, Fourier analysis, Functional Analysis]
+tags: [Hilbert Space, Restriction Problem, Analysis, Fourier Analysis, Functional Analysis]
 author: ksa22118
 math: true
 ---
