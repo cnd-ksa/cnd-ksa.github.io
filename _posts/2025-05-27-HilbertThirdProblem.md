@@ -61,22 +61,22 @@ math: true
 
 증명은 다음과 같습니다.
 
-먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \{ \bold{x} \in \mathbb{R}^N : A\bold{x} = \bold{0}, \bold{x} > \bold{0} \}$$
+먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} > \mathrm{0} \}$$
 가 공집합이 아니면, 정수인 점또한 가짐을 보이면 됩니다.
 
-$C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모든 coordinate들을 $1$ 이상으로 만들어 줄 수 있으므로 $\overline{C} = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \bold{0}, \mathrm{x} \geq \bold{1} \}$도 공집합이 아님을 알 수 있습니다.
+$C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모든 coordinate들을 $1$ 이상으로 만들어 줄 수 있으므로 $\overline{C} = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1} \}$도 공집합이 아님을 알 수 있습니다.
 
 만약 $\overline{C} \subseteq C$가 유리수 점을 가짐을 보인다면, 모든 coordinate에 분모의 최소공배수를 곱해 주어 정수 점을 얻을 수 있으므로, $\overline{C}$가 유리수 점을 가진다는 것을 보이면 충분합니다.
 
 이제 이를 증명하기 위한 많은 방법 중 "Fourier-Motzkin elimination"을 소개하겠습니다.
 
-각 원소가 정수인 행렬 $A$에 대해 $A\mathrm{x} = \bold{0}, \mathrm{x} \geq \bold{1}$은 사전적으로(Lexicographically) 가장 작은 유리수해를 가짐을을 증명할 것입니다.
-이때 각 column vector $\bold{a}$에 대해 $\bold{a}^T \mathrm{x} = 0$은 $\bold{a}^T \bold{x} \geq 0$과 $-\bold{a}^T \mathrm{x} \geq 0$로 나타낼 수 있고, 따라서 각 원소가 정수인 행렬 $A$와 $\bold{b}$에 대해
-$$ A\bold{x} \geq \bold{b}, \bold{x} \geq \bold{1} $$
+각 원소가 정수인 행렬 $A$에 대해 $A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1}$은 사전적으로(Lexicographically) 가장 작은 유리수해를 가짐을을 증명할 것입니다.
+이때 각 column vector $\mathrm{a}$에 대해 $\mathrm{a}^T \mathrm{x} = 0$은 $\mathrm{a}^T \mathrm{x} \geq 0$과 $-\mathrm{a}^T \mathrm{x} \geq 0$로 나타낼 수 있고, 따라서 각 원소가 정수인 행렬 $A$와 $\mathrm{b}$에 대해
+$$ A\mathrm{x} \geq \mathrm{b}, \mathrm{x} \geq \mathrm{1} $$
 을 만족시키는 실수해가 존재할 때, 사전적으로 가장 작은 해의 모든 coordinate가 유리수임을 보이면 충분합니다.
 
 이를 $N$에 대한 귀납법으로 보여봅시다. 먼저 $N=1$일 때는 자명합니다. 이제 $N>1$일 때를 살펴보면, 만약 $\mathrm{x}' = (x_1, \cdots, x_{N-1})$가 고정되어 있다고 할 때 부등식들을 $x_N$에 대해 풀면 $x_N$에 대한 lower bound($x_N \geq 1$ 포함) 또는 upper bound들을 얻을 수 있습니다. 이때 임의의 lower bound가 임의의 upper bound 이하라는 것으로부터 $x_1, \cdots, x_{N-1}$들에 대한 부등식을
-$$ A' \bold{x}' \geq \bold{b}, \bold{x}' \geq \bold{1} $$
+$$ A' \mathrm{x}' \geq \mathrm{b}, \mathrm{x}' \geq \mathrm{1} $$
 와 같이 얻을 수 있습니다. 귀납법에 의해 이는 사전적으로 가장 작은 해 $x_*'$를 얻으며, 이는 유리수해입니다. 이를 이용해 선형 방정식 혹은 부등식을 풀어 가장 작은 $x_N$을 얻을 수 있고, 이때 방정식 또는 부등식의 계수가 모두 정수이므로 유리수임을 알 수 있습니다. 그리고 이는 사전적으로 가장 작은 해이고, 따라서 귀납적으로 위 정리가 증명됩니다.
 
 ---
