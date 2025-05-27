@@ -49,7 +49,7 @@ math: true
 
 이해를 돕기 위해 아래와 같은 그림을 가져와보면, 그림에서 $\tilde{P}$와 $\tilde{Q}$는 equidecomposable하고, $P$와 $Q$는 equicomplete합니다.
 
-![example](equidecomposable.png){:width="400"}
+![example](./images/equidecomposable.png){:width="400"}
 
 이제 두 다면체가 equidecomposable 혹은 equicomplement한지를 판단하기 위해 필요한 두 가지 보조정리에 대해 살펴봅시다.
 
@@ -141,7 +141,7 @@ $$ m_1 \alpha_1 + \cdots + m_r \alpha_r = n_1 \beta_1 + \cdots + n_s \beta_s + l
 
 다음과 같은 두 다면체 $T_1$과 $T_2$를 생각해봅시다.
 
-![T1 and T2](t1_and_t2.png)
+![T1 and T2](./images/t1_and_t2.png){:width="400"}
 
 둘의 부피가 동일함은 쉽게 확인할 수 있습니다. 이때 각각의 이면각을 살펴봅시다.
 
