@@ -31,7 +31,7 @@ math: true
 
 ![3](./images/rectangle_to_square.png){:width="400"}
 
-![4](./images/square_to_square.png){:width="400"}
+![4](./images/square_to_square.png){:width="200"}
 
 
 그렇다면, 위 문제를 3차원으로 확장시킨다면 어떻게 될까요? 이 문제가 바로 힐베르트의 3번 문제입니다. 즉, 다음과 같이 기술할 수 있습니다:
@@ -70,13 +70,17 @@ $C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모
 
 이제 이를 증명하기 위한 많은 방법 중 "Fourier-Motzkin elimination"을 소개하겠습니다.
 
-각 원소가 정수인 행렬 $A$에 대해 $A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1}$은 사전적으로(Lexicographically) 가장 작은 유리수해를 가짐을을 증명할 것입니다.
+각 원소가 정수인 행렬 $A$에 대해 $A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1}$은 사전적으로(Lexicographically) 가장 작은 유리수해를 가짐을 증명할 것입니다.
 이때 각 column vector $\mathrm{a}$에 대해 $\mathrm{a}^T \mathrm{x} = 0$은 $\mathrm{a}^T \mathrm{x} \geq 0$과 $-\mathrm{a}^T \mathrm{x} \geq 0$로 나타낼 수 있고, 따라서 각 원소가 정수인 행렬 $A$와 $\mathrm{b}$에 대해
+
 $$ A\mathrm{x} \geq \mathrm{b}, \mathrm{x} \geq \mathrm{1} $$
+
 을 만족시키는 실수해가 존재할 때, 사전적으로 가장 작은 해의 모든 coordinate가 유리수임을 보이면 충분합니다.
 
 이를 $N$에 대한 귀납법으로 보여봅시다. 먼저 $N=1$일 때는 자명합니다. 이제 $N>1$일 때를 살펴보면, 만약 $\mathrm{x}' = (x_1, \cdots, x_{N-1})$가 고정되어 있다고 할 때 부등식들을 $x_N$에 대해 풀면 $x_N$에 대한 lower bound($x_N \geq 1$ 포함) 또는 upper bound들을 얻을 수 있습니다. 이때 임의의 lower bound가 임의의 upper bound 이하라는 것으로부터 $x_1, \cdots, x_{N-1}$들에 대한 부등식을
+
 $$ A' \mathrm{x}' \geq \mathrm{b}, \mathrm{x}' \geq \mathrm{1} $$
+
 와 같이 얻을 수 있습니다. 귀납법에 의해 이는 사전적으로 가장 작은 해 $x_*'$를 얻으며, 이는 유리수해입니다. 이를 이용해 선형 방정식 혹은 부등식을 풀어 가장 작은 $x_N$을 얻을 수 있고, 이때 방정식 또는 부등식의 계수가 모두 정수이므로 유리수임을 알 수 있습니다. 그리고 이는 사전적으로 가장 작은 해이고, 따라서 귀납적으로 위 정리가 증명됩니다.
 
 ---
@@ -88,7 +92,9 @@ $$ A' \mathrm{x}' \geq \mathrm{b}, \mathrm{x}' \geq \mathrm{1} $$
 증명은 위의 Cone lemma를 사용합니다. $P$의 분할에서 각 segment 위의 pearl의 개수를 $x_i$, $Q$의 분할에서 각 segment 위의 pearl의 개수를 $y_j$로 둡시다. 이때 $P$의 분할에서 각 $P_k$ 위 edge에 대해, 그와 대응되는 $Q_k$ 위 edge와 서로 pearl의 개수가 같도록 하는 양의 정수 $x_i$들과 $y_j$들을 찾아주면 됩니다.
 
 그러면 $P_k$ 위의 edge $e$가 $s_i$들로 분할되고 $Q_k$ 위의 대응되는 edge $e'$가 $s_j'$로 분할된다 할 때, 위 조건을 수식을 이용하여 나타내면
+
 $$ \sum_{i : s_i \subseteq e} x_i - \sum_{j : s_j' \subseteq e'} y_j = 0 $$
+
 와 같습니다.
 
 그런데, 위는 $x_i$들과 $y_j$들로 이루어진 선형 연립 방정식이고, 각 $x_i$들과 $y_j$들을 해당 segment의 길이로 두게 되면 위 선형 연립 방정식은 양의 실수해를 가짐을 알 수 있습니다.
@@ -99,7 +105,9 @@ $$ \sum_{i : s_i \subseteq e} x_i - \sum_{j : s_j' \subseteq e'} y_j = 0 $$
 ## Bricard's condition
 
 > (Theorem) 두 3차원 다면체 $P, Q$가 equidecomposable하고, 이때 각각의 이면각을 $\alpha_1, \cdots, \alpha_r$과 $\beta_1, \cdots, \beta_s$라고 할 때,
+> 
 > $$ m_1 \alpha_1 + \cdots + m_r \alpha_r = n_1 \beta_1 + \cdots + n_s \beta_s + k \pi $$
+> 
 > 를 만족하는 양의 정수들 $m_i$와 $n_j$, 그리고 정수 $k$가 존재한다.
 > 더 나아가, equicomplementable한 $P$와 $Q$에 대해서도 성립한다.
 
@@ -125,11 +133,17 @@ $$\Sigma_2 = n_1 \beta_1 + \cdots + n_s \alpha_s + k_2 \pi$$
 이제 방금과 같이 $\Sigma_1'$과 $\Sigma_2'$, 그리고 $\Sigma_1''$과 $\Sigma_2''$을 pearl들에 따라 더한 이면각의 합으로 정의합니다. 그러면, $\tilde{P}$와 $\tilde{Q}$가 equidecomposable하므로 $\Sigma_1'' = \Sigma_2''$를 쉽게 얻을 수 있습니다. 또, $\Sigma_1'$과 $\Sigma_1''$은 동일한 다면체 $\tilde{P}$에 대해 각 edge 위에 같은 수의 pearl이 놓여 있으므로, 위 논리와 동일하게 어떤 정수 $l_1$에 대해 $\Sigma_1' = \Sigma_1'' + l_1 \pi$가 성립하고, 마찬가지로 어떤 정수 $l_2$에 대해 $\Sigma_2' = \Sigma_2'' + l_2 \pi$를 만족합니다.
 
 따라서 정수 $l = l_2 - l_2$에 대해
+
 $$\Sigma_2' = \Sigma_1' + l \pi$$
+
 가 성립함을 얻습니다. 그런데 $\Sigma_1'$과 $\Sigma_2'$는 각각 $\tilde{P}$와 $\tilde{Q}$의 분할이고, 각각 $P$, $Q$를 제외하면 서로 같은 조각들로 구성되어 있습니다. 따라서 양변의 $P_i'$ 항들과 $Q_i'$ 항들을 서로 소거시킬 수 있고, 이때 $P$와 $Q$의 항들만 남으므로 소거시킨 후의 각각의 항을
+
 $$ m_1 \alpha_1 + \cdots + m_r \alpha_r, \quad n_1 \beta_1 + \cdots + n_s \beta_s $$
+
 와 같이 표현할 수 있습니다. ($m_j$는 $P$의 이면각 $\alpha_j$를 이루는 edge 위의 pearl의 개수이고, $n_j$는 마찬가지로 $Q$의 이면각 $\beta_j$를 이루는 edge 위의 pearl의 개수.) 또, 위 둘의 차는 $l\pi$로 나타나므로
+
 $$ m_1 \alpha_1 + \cdots + m_r \alpha_r = n_1 \beta_1 + \cdots + n_s \beta_s + l \pi$$
+
 를 얻고, 증명이 완료됩니다.
 
 ---
@@ -151,7 +165,9 @@ $$ m \cdot \frac{\pi}{2} + n \cdot \cos^{-1}\frac{1}{\sqrt{3}} = r \cdot \pi + k
 인 정수 $m, n$과 유리수 $r$, 그리고 정수 $k$가 존재합니다.
 
 그런데, 양변을 $\pi$로 나누고 정리하면 유리수 $p, q$에 대해
+
 $$ \frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{3}} = \frac{p}{q} $$
+
 임을 얻습니다.
 
 하지만 $\frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{3}}$는 무리수이므로 모순이고, 따라서 $T_1$과 $T_2$는 equidecomposable하지 않음이 증명됩니다. 더 나아가, 둘이 equicomplement하지 않음도 알 수 있습니다.
@@ -163,32 +179,50 @@ $$ \frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{3}} = \frac{p}{q} $$
 위 증명에서 $\frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{3}}$가 무리수라는 사실이 쓰였는데, 이를 간단한 고등학교 수준의 내용만으로 증명할 수 있어 소개해봅니다.
 
 위를 보이기 위해, 양의 홀수 $n \geq 3$에 대해,
+
 $$ \frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{n}} $$
+
 이 무리수임을 보여보겠습니다.
 
 먼저 $\cos \alpha + \cos \beta = 2 \cos \frac{\alpha+\beta}{2} \cos \frac{\alpha-\beta}{2}$라는 사실로부터 시작합니다. 이 공식에 $\alpha = (k+1)\varphi$와 $\beta = (k-1)\varphi$를 대입하면
+
 $$ \cos(k+1)\varphi = 2 \cos\varphi \cos k \varphi - \cos (k-1) \varphi $$
+
 를 얻습니다.
 
 이제 $\varphi$ 자리에 $\varphi_n = \cos^{-1} \frac{1}{\sqrt{n}}$을 대입하면, 어떤 $n$의 배수가 아닌 정수 $A_k$에 대해
+
 $$ \cos k \varphi_n = \frac{A_k}{\sqrt{n}^k} $$
+
 이 성립함을 귀납적으로 확인할 수 있습니다.
 
 실제로 확인해보면,
+
 $$\cos (k+1) \varphi_n = 2 \frac{1}{\sqrt{n}} \frac{A_k}{\sqrt{n}^k} - \frac{A_{k-1}}{\sqrt{n}^{k-1}} = \frac{2A_k - nA_{k-1}}{\sqrt{n}^{k+1}}$$
+
 이므로 $n$이 $3$ 이상의 홀수라는 가정으로부터터 귀납적으로 참임이 보여집니다.
 
 이제 $\frac{1}{\pi} \varphi_n$가 유리수라고 가정해봅시다. 그러면, 어떤 정수 $k, l > 0$에 대해
+
 $$ \frac{1}{\pi} \varphi_n = \frac{k}{l} $$
+
 가 성립합니다. <br>
  그러면, $l \varphi_n = k \pi$와 위의 결과로부터
+ 
 $$ \pm 1 = \cos k \pi = \frac{A_l}{\sqrt{n}^l} $$
+
 를 얻고, $\sqrt{n}^l = \pm A_l$이 정수이므로 $l \geq 2$이고 $n \mid \sqrt{n}^l$임을 얻습니다. <br>
 따라서 $n \mid A_l$이고, 이는 $A_l$이 $n$의 배수가 아니라는 가정에 모순이므로 주어진 수
+
 $$ \frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{n}} $$
+
 는 무리수라는 결론을 얻게 됩니다.
 
-따라서 이로부터 $$ \frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{3}} $$
+따라서 이로부터 
+
+$$ \frac{1}{\pi} \cos^{-1} \frac{1}{\sqrt{3}} $$
+
+
 이 무리수임을 알 수 있고, Hilbert's third problem의 증명을 마무리하였습니다.
 
 ---
