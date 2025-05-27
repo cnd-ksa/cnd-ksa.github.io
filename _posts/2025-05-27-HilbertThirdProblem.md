@@ -12,7 +12,7 @@ math: true
 
 정사각형을 정삼각형으로 만들 수 있을까요? 다시말해, 정사각형을 유한개의 조각으로 분할해 넓이가 같은 정삼각형으로 만들 수 있을까요? 답은 가능하다입니다. 아래와 같이 분할하여 만들 수 있으며, 실제로 조각이 가장 적은 구성임이 최근 증명되었습니다.
 
-![construction](./images/sqaure_to_triangle.png){:width="400"}
+![construction](./images/square_to_triangle.png){:width="400"}
 
 심지어 임의의 넓이가 같은 두 다각형 $P$, $Q$에 대해서 $P$를 유한 개의 조각으로 잘라 $Q$를 구성할 수 있음이 증명되었습니다. (Wallace-Bolyai-Gerwien theorem)
 
@@ -31,7 +31,7 @@ math: true
 
 ![3](./images/rectangle_to_square.png){:width="400"}
 
-![4](./images/sqaure_to_square.png){:width="400"}
+![4](./images/square_to_square.png){:width="400"}
 
 
 그렇다면, 위 문제를 3차원으로 확장시킨다면 어떻게 될까요? 이 문제가 바로 힐베르트의 3번 문제입니다. 즉, 다음과 같이 기술할 수 있습니다:
@@ -57,14 +57,14 @@ math: true
 
 ## The Cone Lemma
 
-*(Lemma) 정수계수 선형연립방정식이 양의 실수해를 갖는다면, 양의 정수해도 갖는다.*
+> (Lemma) 정수계수 선형연립방정식이 양의 실수해를 갖는다면, 양의 정수해도 갖는다.
 
 증명은 다음과 같습니다.
 
-먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} > \mathrm{0} \}$$
-가 공집합이 아니면, 정수인 점또한 가짐을 보이면 됩니다.
+먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \\{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} > \mathrm{0} \\}$$
+가 공집합이 아니면, 정수인 점 또한 가짐을 보이면 됩니다.
 
-$C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모든 coordinate들을 $1$ 이상으로 만들어 줄 수 있으므로 $\overline{C} = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1} \}$도 공집합이 아님을 알 수 있습니다.
+$C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모든 coordinate들을 $1$ 이상으로 만들어 줄 수 있으므로 $\overline{C} = \\{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1} \\}$도 공집합이 아님을 알 수 있습니다.
 
 만약 $\overline{C} \subseteq C$가 유리수 점을 가짐을 보인다면, 모든 coordinate에 분모의 최소공배수를 곱해 주어 정수 점을 얻을 수 있으므로, $\overline{C}$가 유리수 점을 가진다는 것을 보이면 충분합니다.
 
@@ -83,7 +83,7 @@ $$ A' \mathrm{x}' \geq \mathrm{b}, \mathrm{x}' \geq \mathrm{1} $$
 
 ## The Pearl Lemma
 
-*equidecompasable한 두 $P=P_1 \cup \cdots \cup P_n$과 $Q=Q_1 \cup \cdots \cup Q_n$에 대해, 각 segment에 적절히 양의 개수만큼 pearl을 놓아 각 $P_k$의 edge와 그에 대응되는 $Q_k$의 edge 위에 놓여 있는 pearl의 개수가 같도록 할 수 있다.*
+> equidecompasable한 두 $P=P_1 \cup \cdots \cup P_n$과 $Q=Q_1 \cup \cdots \cup Q_n$에 대해, 각 segment에 적절히 양의 개수만큼 pearl을 놓아 각 $P_k$의 edge와 그에 대응되는 $Q_k$의 edge 위에 놓여 있는 pearl의 개수가 같도록 할 수 있다.
 
 증명은 위의 Cone lemma를 사용합니다. $P$의 분할에서 각 segment 위의 pearl의 개수를 $x_i$, $Q$의 분할에서 각 segment 위의 pearl의 개수를 $y_j$로 둡시다. 이때 $P$의 분할에서 각 $P_k$ 위 edge에 대해, 그와 대응되는 $Q_k$ 위 edge와 서로 pearl의 개수가 같도록 하는 양의 정수 $x_i$들과 $y_j$들을 찾아주면 됩니다.
 
@@ -98,13 +98,10 @@ $$ \sum_{i : s_i \subseteq e} x_i - \sum_{j : s_j' \subseteq e'} y_j = 0 $$
 
 ## Bricard's condition
 
-*(Theorem) 두 3차원 다면체 $P, Q$가 equidecomposable하고, 이때 각각의 이면각을 $\alpha_1, \cdots, \alpha_r$과 $\beta_1, \cdots, \beta_s$라고 할 때,*
-
-$$ m_1 \alpha_1 + \cdots + m_r \alpha_r = n_1 \beta_1 + \cdots + n_s \beta_s + k \pi $$
-
-*를 만족하는 양의 정수들 $m_i$와 $n_j$, 그리고 정수 $k$가 존재한다.*
-<br>
-*더 나아가, equicomplementable한 $P$와 $Q$에 대해서도 성립한다.*
+> (Theorem) 두 3차원 다면체 $P, Q$가 equidecomposable하고, 이때 각각의 이면각을 $\alpha_1, \cdots, \alpha_r$과 $\beta_1, \cdots, \beta_s$라고 할 때,
+> $$ m_1 \alpha_1 + \cdots + m_r \alpha_r = n_1 \beta_1 + \cdots + n_s \beta_s + k \pi $$
+> 를 만족하는 양의 정수들 $m_i$와 $n_j$, 그리고 정수 $k$가 존재한다.
+> 더 나아가, equicomplementable한 $P$와 $Q$에 대해서도 성립한다.
 
 Hilbert's third problem을 논증하기 위해서는 equidecomposable까지만으로도 충분하나, 확장형까지 증명해보도록 하겠습니다.
 
@@ -146,7 +143,7 @@ $$ m_1 \alpha_1 + \cdots + m_r \alpha_r = n_1 \beta_1 + \cdots + n_s \beta_s + l
 둘의 부피가 동일함은 쉽게 확인할 수 있습니다. 이때 각각의 이면각을 살펴봅시다.
 
 $T_1$의 이면각들을 계산해보면, 세 개의 $\frac{\pi}{2}$와 세 개의 $\cos^{-1}\frac{1}{\sqrt{3}}$로 이루어짐을 쉽게 계산을 통해 알 수 있습니다.
-s
+
 또, $T_2$의 이면각을 계산해보면, 세 개의 $\frac{\pi}{2}$와 두 개의 $\frac{\pi}{4}$, 그리고 한 개의 $\frac{\pi}{3}$로 이루어짐을 알 수 있습니다. (마지막의 경우 정육면체를 공간대각선을 한 점으로 만들도록 사영시켜 정육각형으로 만들면 쉽게 관찰할 수 있습니다.)
 
 따라서, 만약 $T_1$과 $T_2$가 equidecomposable하다면 Bricard's condition에 의해
