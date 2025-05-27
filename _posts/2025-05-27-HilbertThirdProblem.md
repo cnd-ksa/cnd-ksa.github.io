@@ -18,7 +18,7 @@ math: true
 
 증명은 간단하게 다음과 같이 할 수 있습니다.
 
-1. 임의의 다각형은은 삼각분할이 가능하다.
+1. 임의의 다각형은 삼각분할이 가능하다.
 2. 임의의 삼각형을 직사각형으로 만들 수 있다.
 3. 임의의 직사각형을 정사각형으로 만들 수 있다.
 4. 두 정사각형을 큰 하나의 정사각형으로 만들 수 있다.
@@ -49,7 +49,7 @@ math: true
 
 이해를 돕기 위해 아래와 같은 그림을 가져와보면, 그림에서 $\tilde{P}$와 $\tilde{Q}$는 equidecomposable하고, $P$와 $Q$는 equicomplete합니다.
 
-![example](equidecomposable.png)
+![example](equidecomposable.png){:width="400"}
 
 이제 두 다면체가 equidecomposable 혹은 equicomplement한지를 판단하기 위해 필요한 두 가지 보조정리에 대해 살펴봅시다.
 
