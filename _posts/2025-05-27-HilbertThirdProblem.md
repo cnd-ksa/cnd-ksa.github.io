@@ -236,3 +236,9 @@ $$ \sum_i l_i \otimes \theta_i $$
 이때 $l_i$와 $\theta_i$는 각각 다면체의 edge의 길이와 이면각을 나타냅니다.
 
 하지만 이에 대해 다루는 것은 위의 풀이에 비해 상당히 복잡한 내용이고, 위의 풀이가 매우 간결하고 아름답다는 점에서 위와 같은 풀이를 소개하였습니다.
+
+---
+
+## References
+
+Martin Aigner & Günter M. Ziegler - Proofs from THE BOOK
