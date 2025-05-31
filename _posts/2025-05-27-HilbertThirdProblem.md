@@ -37,7 +37,7 @@ math: true
 그렇다면, 위 문제를 3차원으로 확장시킨다면 어떻게 될까요? 이 문제가 바로 힐베르트의 3번 문제입니다. 즉, 다음과 같이 기술할 수 있습니다:
 - 임의의 부피가 같은 두 다면체 $P$, $Q$에 대해, $P$를 유한 개의 조각으로 잘 잘라 붙여 $Q$를 만들 수 있는가?
 
-위 문제는 Dehn이 Dehn invariant라는 개념을 도입하여 부정적으로 해결하였고, 추후 V.F.Kagan 등이이 단순화된 풀이를 제시하였습니다.
+위 문제는 Dehn이 Dehn invariant라는 개념을 도입하여 부정적으로 해결하였고, 추후 V.F.Kagan 등이 단순화된 풀이를 제시하였습니다.
 
 ---
 
@@ -61,10 +61,10 @@ math: true
 
 증명은 다음과 같습니다.
 
-먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \\{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} > \mathrm{0} \\}$$
+먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} > \mathrm{0} \}$$
 가 공집합이 아니면, 정수인 점 또한 가짐을 보이면 됩니다.
 
-$C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모든 coordinate들을 $1$ 이상으로 만들어 줄 수 있으므로 $\overline{C} = \\{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1} \\}$도 공집합이 아님을 알 수 있습니다.
+$C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모든 coordinate들을 $1$ 이상으로 만들어 줄 수 있으므로 $\overline{C} = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1} \}$도 공집합이 아님을 알 수 있습니다.
 
 만약 $\overline{C} \subseteq C$가 유리수 점을 가짐을 보인다면, 모든 coordinate에 분모의 최소공배수를 곱해 주어 정수 점을 얻을 수 있으므로, $\overline{C}$가 유리수 점을 가진다는 것을 보이면 충분합니다.
 
