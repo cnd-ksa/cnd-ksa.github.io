@@ -61,7 +61,7 @@ math: true
 
 증명은 다음과 같습니다.
 
-먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \left\{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} > \mathrm{0} \right\}$$
+먼저 위를 수학적으로 기술하면, 각 원소가 정수인 행렬 $A \in \mathbb{Z}^{M \times N}$에 대해 $$C = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} > \mathrm{0} \}$$
 가 공집합이 아니면, 정수인 점 또한 가짐을 보이면 됩니다.
 
 $C$가 공집합이 아니면, $\mathrm{x}$에 적절히 상수배를 취해 모든 coordinate들을 $1$ 이상으로 만들어 줄 수 있으므로 $\overline{C} = \{ \mathrm{x} \in \mathbb{R}^N : A\mathrm{x} = \mathrm{0}, \mathrm{x} \geq \mathrm{1} \}$도 공집합이 아님을 알 수 있습니다.
