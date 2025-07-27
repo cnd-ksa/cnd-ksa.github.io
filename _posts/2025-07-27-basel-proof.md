@@ -1,7 +1,7 @@
 ---
 title: Proof of the Basel Problem
 date: 2025-07-27 16:00:00 +0900
-categories: [Mathematical Analysis, Series]
+categories: [Analysis, Series]
 tags: [Basel Problem, Power Series, Wallis Integral, Trigonometric Substitution, Integration, Inverse Sine, Infinite Series]
 author: ksa23027
 math: true
