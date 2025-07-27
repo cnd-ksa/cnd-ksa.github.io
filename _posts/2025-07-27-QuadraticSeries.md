@@ -89,6 +89,9 @@ $$
 
 $$
 \ln \Gamma (z)=-\ln z-\gamma z+\sum_{k=1}^{\infty}\left ( \frac{z}{k}-\ln \left ( 1+\frac{z}{k} \right )\right )
+$$
+
+$$
 \psi (z)=\frac{d}{dz}\ln \Gamma (z)=-\frac{1}{z}-\gamma +\sum_{k=1}^{\infty}\left ( \frac{1}{k}-\frac{1}{k+z} \right )=-\gamma +\sum_{k=1}^{\infty}\left ( \frac{1}{k}-\frac{1}{k+z-1} \right )
 $$
 
