@@ -1,7 +1,7 @@
 ---
 title: Existence of Anti-Pascal Triangel (2018 IMO)
 date: 2025-07-27 11:59:00
-categories: Discrete Mathematics, Combinatorics
+categories: Combinatorics, Discrete Mathematics
 tags: [Olympiad, Problem Solving, Combinatorics, Logics]
 author: ksa25078
 math: true
