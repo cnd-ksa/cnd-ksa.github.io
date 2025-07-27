@@ -160,7 +160,7 @@ f(x+2\pi) ,(x\in\mathbb{R-[-\pi, \pi]})
 \right.
 $$
 
-인 함수를 생각해보겠습니다. $f(x)$를 $[-\pi, pi]$에서 푸리에 급수로 표현하면
+인 함수를 생각해보겠습니다. $f(x)$를 $[-\pi, \pi]$에서 푸리에 급수로 표현하면
 
 $$
 f(x)=a_0+\sum_{n=1}^{\infty}a_n\cos (nx)+\sum_{n=1}^{\infty}b_n\sin (nx)
