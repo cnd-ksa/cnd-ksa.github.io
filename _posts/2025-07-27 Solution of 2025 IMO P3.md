@@ -1,5 +1,5 @@
 ---
-title: 2025 IMO P3 - Integer Functional Equations Using Primes
+title: 2025-07-27 Solution of 2025 IMO P3
 date: 2025-07-27 22:00:00 +0900
 categories: [Olympiad, Number Theory]
 tags: [Primes, Dirichlet’s Theorem, Primitive Roots]
