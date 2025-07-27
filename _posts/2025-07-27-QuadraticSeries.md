@@ -152,18 +152,21 @@ $\alpha =1$일 땐, 복소해석학을 통해, $\alpha =0$엔 푸리에 급수�
 ## Using Fourier Series
 
 $$
-f(x)=\left\{\begin{matrix}
-\cosh (ax) (x\in [-\pi, \pi]) \\ f(x+2\pi) (x\in\mathbb{R-[-\pi, \pi]})
-\end{matrix}\right.
+f(x)=\left\{
+\begin{array}{l}
+\cosh (ax) ,(x\in [-\pi, \pi]) \\
+f(x+2\pi) ,(x\in\mathbb{R-[-\pi, \pi]})
+\end{array}
+\right.
 $$
 
-인 함수를 생각해보겟습니다. $f(x)$를 $[-\pi, pi]$에서 푸리에 급수로 표현하면
+인 함수를 생각해보겠습니다. $f(x)$를 $[-\pi, pi]$에서 푸리에 급수로 표현하면
 
 $$
 f(x)=a_0+\sum_{n=1}^{\infty}a_n\cos (nx)+\sum_{n=1}^{\infty}b_n\sin (nx)
 $$
 
-이 되고, $\cosh(ax) $는 even function이므로 $b_n=0$이 됩니다. 푸리에 계수는
+이 되고 $\cosh(ax) $는 even function이므로 $b_n=0$이 됩니다. 푸리에 계수는
 
 $$
 a_0=\frac{1}{2\pi}\int _{-\pi}^{\pi}\cosh (ax)dx, a_n=\frac{2}{\pi}\int _{-\pi}^{\pi}\cosh (ax)\cos (nx)dx
@@ -199,13 +202,9 @@ $$
 ## Example
 
 $$
-1. \sum_{n=1}^{\infty}\frac{1}{6n^2-5n+1}=\frac{\pi}{2\sqrt{3}}-\frac{3}{2}\ln 3+2\ln 2
-$$
-
-$$
-2. \sum_{n=1}^{\infty}\frac{1}{4n^2+4n+1}=\frac{\pi^2}{8}-1
-$$
-
-$$
-3. \sum_{n=1}^{\infty}\frac{1}{n^2+1}=\frac{\pi\coth\pi-1}{2}
+\begin{aligned}
+&1. \sum_{n=1}^{\infty}\frac{1}{6n^2-5n+1}=\frac{\pi}{2\sqrt{3}}-\frac{3}{2}\ln 3+2\ln 2\\
+&2. \sum_{n=1}^{\infty}\frac{1}{4n^2+4n+1}=\frac{\pi^2}{8}-1\\
+&3. \sum_{n=1}^{\infty}\frac{1}{n^2+1}=\frac{\pi\coth\pi-1}{2}
+\end{aligned}
 $$
