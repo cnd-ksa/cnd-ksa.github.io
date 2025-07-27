@@ -203,8 +203,8 @@ $$
 
 $$
 \begin{aligned}
-1. \sum_{n=1}^{\infty}\frac{1}{6n^2-5n+1}&=\frac{\pi}{2\sqrt{3}}-\frac{3}{2}\ln 3+2\ln 2\\
-2. \sum_{n=1}^{\infty}\frac{1}{4n^2+4n+1}&=\frac{\pi^2}{8}-1\\
-3. \sum_{n=1}^{\infty}\frac{1}{n^2+1}&=\frac{\pi\coth\pi-1}{2}
+1. &\sum_{n=1}^{\infty}\frac{1}{6n^2-5n+1}=\frac{\pi}{2\sqrt{3}}-\frac{3}{2}\ln 3+2\ln 2\\
+2. &\sum_{n=1}^{\infty}\frac{1}{4n^2+4n+1}=\frac{\pi^2}{8}-1\\
+3. &\sum_{n=1}^{\infty}\frac{1}{n^2+1}=\frac{\pi\coth\pi-1}{2}
 \end{aligned}
 $$
