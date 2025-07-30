@@ -1,5 +1,5 @@
 ---
-title: Existence of Anti-Pascal Triangel (2018 IMO)
+title: Existence of Anti-Pascal Triangle (2018 IMO)
 date: 2025-07-27 11:59:00
 categories: [Discrete Mathematics, Combinatorics]
 tags: [Olympiad, Problem Solving, Combinatorics, Logics]
