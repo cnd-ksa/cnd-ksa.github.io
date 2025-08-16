@@ -30,8 +30,6 @@ $$
 
 그런데 $xe^x$는 단사 함수가 아니므로 다음 그래프와 같이 $W_0(x)$와 $W_{-1}(x)$로 나눠서 정의합니다.
 
-![construction](./images/Lambert W Function.png){:width="400"}
-
 이제 람베르트 $W$ 함수를 사용하여 원래 풀려 했던 적분을 구해보겠습니다.
 
 ## Infinite Power Tower To Lambert W Function
